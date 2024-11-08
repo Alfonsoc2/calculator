@@ -22,11 +22,15 @@ buttons.forEach(button => {
                 currentInput = ''; // Reset input
             }
         }
-        // Clear input when 'C' is pressed
-        else if (buttonText === 'clear') {
+        // Clear all input when 'Clear-all' is pressed
+        else if (buttonText === 'Clear All') {
             currentInput = '';
             display.textContent = ''; // Clear the display
         }
-        //to do fix the clear and clear all functions
+        //clear last input when clear is presses
+        else if (buttonText === 'Clear') {
+            currentInput = currentInput.slice(0,-1);
+            display.textContent = '';
+        }
     });
 });

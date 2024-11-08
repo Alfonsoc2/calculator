@@ -30,6 +30,7 @@ body {
     font-size: 2em; 
     text-align: right;
     padding: 20px;
+    min-height: 80px;
 }
 
 .buttons {
