@@ -6,7 +6,8 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #1e1e1e;
+    color: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,19 +15,19 @@ body {
     margin: 0;
     overflow-x: hidden;
 }
+
 .calculator {
-    background-color: #fff;
     border-radius: 10px;
-     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     overflow: hidden;
-    max-width: 300px
-    border: 1px solid #ddd;
+    max-width: 500px;
+    border-bottom: 2px solid black;
 }
 
 .display {
-    background-color: #333;
-    color: #fff;
-    font-size: 2em;
+    background-color: black;
+    color: #4CBB17;
+    font-size: 2em; 
     text-align: right;
     padding: 20px;
 }
@@ -39,51 +40,37 @@ body {
 }
 
 button {
-    background-color: #f0f0f0;
-    border: 1px solid #ddd;
+    background-color: #1e1e1e;
+    border: 1px solid #4CBB17;
     padding: 20px;
     font-size: 1.5em;
-    color: #333;
+    color: #4CBB17;
     border-radius: 8px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, box-shadow 0.3s;
     cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
-    background-color: #ddd;
+    background-color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 button:active {
-    background-color: #ccc;
+    background-color: #444;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-button.clear {
-    background-color: teal;
-    color: white;
+button.clear, button.clear-all {
+    color: #4CBB17;
     grid-column: span 2;
-    grid-row: span 1;
-}
-
-button.clear-all {
-    background-color: teal;
-    color: white;   
-    grid-column: span 2;
-    grid-row: span 1;
-}
-
-button.clear:hover, button.clear-all:hover {
-    background-color: grey;
-}
-
-button.clear:hover {
-    background-color: gray;
 }
 
 button.equal {
-    background-color: #4CAF50;
+    background-color: #4CBB17;
     color: white;
 }
 
 button.equal:hover {
-    background-color: #45a049;
+    background-color: #3ca045;
 }
